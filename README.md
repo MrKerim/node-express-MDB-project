@@ -11,7 +11,7 @@
 * Meaning either I am giving wrong types of arguments
 * Or we doesn't accept this ect..
 
-### V2
+### V1.2
 
 * Simple data transfer goal of this file is to add an aditional data base
 * I am sending data from frontend to backend and in there I am recording the text
