@@ -17,3 +17,8 @@
 * I am sending data from frontend to backend and in there I am recording the text
 * into a txt file, after this step when I need to get the data I just simply read and send it.
 * There were some problems however I nailed them.
+
+### V2.0
+
+* Following the turtorial in this [link](https://www.youtube.com/watch?v=_ee38nL13mE). Creating a user blog API for social media like site.
+* Learning mongodb and other tools.
