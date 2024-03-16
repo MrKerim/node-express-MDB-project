@@ -34,7 +34,8 @@ export const signup = async (req,res,next) => {
     const newUser = new User({
         name,
         email,
-        password: hashedPassword
+        password: hashedPassword,
+        blogs : []
     });
 
 
@@ -68,4 +69,22 @@ export const login = async (req,res,next) => {
     }
     return res.status(200).json({message: `Logged in as ${existingUser.name}!`});
 
+};
+
+// This doesn't deletes the blogs of the user
+// And also after the deletion the blogs can only be accessed by the id number of the blog
+// And can't be accessed by getById in the blog-controller.js
+export const deleteUser = async (req,res,next) => {
+    const userId = req.params.id;
+    let user;
+    try{
+        user = await User.findByIdAndDelete(userId);
+    }
+    catch(err){
+        return console.log(err);
+    }
+    if(!user){
+        return res.status(404).json({message:"User not found"});
+    }
+    res.status(200).json({message:"User deleted"});
 };
