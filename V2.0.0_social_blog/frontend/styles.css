@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-section {
+    flex: 40%;
+    background-color: #001f3f; /* Deep Navy Blue */
+    position: relative;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.login-section {
+    flex: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.login-box {
+    width: 70%;
+    max-width: 400px;
+}
+
+h2 {
+    color: #001f3f;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block; /* Ensure the button behaves like a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners */
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+button:hover {
+    background-color: #0056b3; /* Change background color on hover */
+}
